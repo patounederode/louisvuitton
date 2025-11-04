@@ -1,0 +1,260 @@
+:root {
+	--color-text: #111;
+	--text-color: white;
+	--color-background: #eee;
+	--icon-color: Light-dark pink, darkorange;
+}
+
+header {
+	font-family: "light";
+	background-color: white;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+
+}
+
+/* de eerste button direct in de header */
+header>button {
+	order: -1;
+}
+
+/* hamburger menu */
+
+header nav {
+	font-size: 1.9em;
+}
+ 
+
+header ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+header nav ul:nth-of-type(2) {
+	font-size: 0.7em;
+}
+
+header li {
+	display: flex;
+	gap: 1em;
+}
+
+header li:nth-of-type(2) a {
+	flex-shrink: 0;
+}
+
+
+/* iconen */
+header li img {
+	width: 1.3em;
+
+}
+
+/* hamburgermenu icoon */
+header li:nth-of-type(1) img:nth-of-type(1) {
+	width: 2.2em;
+}
+
+
+
+header button {
+	border: none;
+	background: none;
+}
+
+
+/* logo */
+header ul:nth-of-type(1) h1 {
+	font-size: 1.6em;
+	font-family: "medium";
+	letter-spacing: 0.08em;
+	/* ruimte tussen letters */
+}
+
+
+header ul:nth-of-type(1) li:nth-of-type(2) {
+	flex-shrink: 0;
+}
+
+/* button links van logo */
+header>button {
+	order: -1;
+}
+
+header nav {
+	/* uit beeld */
+	background-color: var(--text-color);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+	/* ul's buiten scherm */
+	translate: -100% 0;
+	transition: 1s;
+
+	/* menu kunnen scrollen */
+	overflow-y: auto;
+}
+
+/* button in hamburger menu */
+header nav button {
+	display: flex;
+	padding: 3em;
+	padding-bottom: 0;
+}
+
+nav.toonMenu {
+	translate: 0% 0%;
+}
+
+@media (min-width:38em) {
+	header>button {
+		display: none;
+	}
+
+	nav {
+		position: static;
+		translate: unset;
+		padding: 0;
+
+		background: none;
+	}
+
+	nav button img {
+		width: 3em
+	}
+
+	nav ul {
+		display: flex;
+		gap: 1em;
+		flex-direction: column;
+	}
+
+}
+
+header ul p {
+	font-family: "light";
+	display: flex;
+	align-items: center;
+}
+
+
+/* KLEINER dan 60em */
+@media (width < 60em) {
+
+	/* tekst klein scherm */
+	header li p {
+		display: none;
+	}
+
+
+	/* favoriet icoon */
+	header li:nth-of-type(3) img:nth-of-type(1) {
+		display: none;
+	}
+
+	header ul li:nth-of-type(1) img:nth-last-child(2) {
+		display: none;
+	}
+}
+
+
+
+/* GROTER dan 60em */
+@media (width > 60em) {
+
+	/* header (logo en iconen) */
+	header ul:nth-of-type(1) {
+		font-family: "medium";
+		font-size: 1.2em;
+	}
+
+	footer h2 {
+		display: none;
+	}
+
+	/* zoekbalk uit beeld */
+	header ul:nth-of-type(2) {
+		display: none;
+	}
+
+}
+
+
+
+
+/* footer */
+
+footer {
+	padding: 2em;
+}
+
+footer h2 {
+	text-align: center;
+	font-family: "medium";
+	font-size: 1.5em;
+	text-transform: uppercase;
+
+}
+
+footer details {
+	font-family: "light";
+	font-size: 1.2em;
+	display: grid;
+	justify-content: start;
+	gap: 1em;
+	width: 100%;
+}
+
+footer summary::after {
+	content: "+";
+}
+
+footer summary {
+	list-style: none;
+	width: 100%;
+}
+
+
+footer nav ul {
+	font-family: "light";
+	font-size: 1.2em;
+	gap: 1em;
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	gap: 2em;
+}
+
+footer ul:nth-of-type(2) {
+	display: flex;
+	text-align: center;
+	align-items: center;
+
+}
+
+
+footer ul:nth-of-type(1) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+footer img:nth-of-type(1) {
+	width: 4%;
+
+}
+
+footer details a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: red;
+}

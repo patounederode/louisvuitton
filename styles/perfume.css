@@ -1,0 +1,273 @@
+:root {
+    --color-text: #111;
+    --text-color: white;
+    --color-background: #eee;
+    --icon-color: Light-dark pink, darkorange;
+}
+
+header>ul {
+    background-color: transparent;
+
+}
+
+main ul:first-of-type input {
+    display: none;
+}
+
+
+/* Eerste section */
+section:nth-of-type(1) ul {
+    display: flex;
+    /* geholpen door sanne */
+    overflow-x: scroll;
+    padding: 0;
+}
+
+
+section:nth-of-type(1) li {
+    display: flex;
+    flex-direction: column;
+    /* geholpen door sanne */
+    width: min(100%, 40em);
+    flex-shrink: 0;
+}
+
+section:nth-of-type(1) img {
+    order: -1;
+}
+
+
+section:nth-of-type(1) li:nth-of-type(1) {
+    justify-content: center;
+    width: 100%;
+
+}
+
+
+
+/* tweede section */
+
+section:nth-of-type(2) ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-top: 0;
+}
+
+/* gratis*/
+section:nth-of-type(2) li:nth-of-type(4) p:nth-of-type(2) {
+    color: gray;
+
+}
+
+/* img in button */
+section:nth-of-type(2) img:nth-of-type(1) {
+    width: 6em;
+}
+
+section:nth-of-type(2) li:nth-of-type(4) button {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    border-radius: 0.05em;
+    border-image: linear-gradient(to right, red, orange, yellow, blue, green) 1;
+    /* https://codyhouse.co/nuggets/css-gradient-borders */
+    background-color: white;
+
+}
+
+
+
+/* maten buttons */
+section:nth-of-type(2) li:nth-of-type(3) button {
+    border-radius: 0.5em;
+    letter-spacing: 0.05em;
+    font-family: "light";
+    font-size: 0.8em;
+    border: none;
+}
+
+section:nth-of-type(2) li:nth-of-type(3) button:hover {
+    padding: 0.3em;
+    font-size: 0.85em;
+}
+
+
+
+section:nth-of-type(2) li:nth-of-type(5) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1em
+}
+
+section:nth-of-type(2) li:nth-of-type(5) a:nth-of-type(1) {
+    background-color: var(--color-text);
+    color: var(--text-color);
+    padding: 1em;
+    border-radius: 2em;
+    width: 90%;
+    text-align: center;
+}
+
+section:nth-of-type(2) li:nth-of-type(5) a:nth-of-type(1):hover {
+    background-color: var(--text-color);
+    color: var(--color-text);
+}
+
+section:nth-of-type(2) li:nth-of-type(5) a:nth-of-type(2):hover {
+    color: gray;
+}
+
+section:nth-of-type(2) li:nth-of-type(5) a:nth-of-type(2) {
+    align-self: center;
+}
+
+
+section:nth-of-type(2) li:nth-of-type(6) p {
+    color: gray;
+
+}
+
+
+/* derde section */
+/* tweede video */
+section:nth-of-type(3) video {
+    width: 100%;
+}
+
+
+
+/* groter dan */
+@media (width > 60em) {
+
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main section:nth-of-type(1) {
+        display: grid;
+        grid-column: 1;
+
+    }
+
+    main section:nth-of-type(1) ul {
+        flex-direction: column;
+        height: 40em;
+    }
+
+    main section:nth-of-type(1) ul li :is(img, video) {
+        width: 100%;
+    }
+
+
+    /* rechter section sticky */
+    main section:nth-of-type(2) {
+        background-color: var(--text-color);
+
+    }
+
+
+    section:nth-of-type(2) ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 8em;
+        padding-top: 0;
+    }
+
+    /* linker section */
+    section:nth-of-type(1) ul li {
+        overflow: scroll;
+        /* geholpen door sanne */
+        /* overflow-y: scroll; */
+    }
+
+    section:nth-of-type(1) li {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* rest van de secties onder elkaar */
+    main section:nth-of-type(3),
+    main section:nth-of-type(4) {
+        grid-column: 1/-1;
+    }
+
+}
+
+
+/* section 4 */
+
+section:nth-of-type(4) ul {
+    font-size: 1rem;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 1fr;
+    padding: 2em;
+    padding-top: 0;
+}
+
+
+section:nth-of-type(4) li a {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+section:nth-of-type(4) li button {
+    display: flex;
+    align-self: end;
+    background-color: var(--text-color);
+    border: none;
+    width: 3em;
+}
+
+section:nth-of-type(4) h2 {
+    text-align: center;
+    padding: 1em;
+    padding-bottom: 0;
+}
+
+
+/* groter dan */
+@media (width > 50em) {
+
+    section:nth-of-type(4) ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* groter dan */
+@media (width > 60em) {
+
+    section:nth-of-type(4) ul {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
+/* footer */
+
+footer ul:nth-of-type(1) {
+    list-style-type: none;
+    font-family: "light";
+    flex-shrink: 0;
+}
+
+
+footer ul:nth-of-type(1) li {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1em;
+}
+
+footer>ul li a:nth-of-type(1),
+a:nth-of-type(2) {
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+}
