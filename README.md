@@ -95,20 +95,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Patoune | Aya         | Kyra    | Randi       |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Patoune: Ik wil vragen hoe ik een video erin zet en deze toegankelijk maak
+  | Aya: Het programmeren van de agenda functionaliteit, Het animeren van de bewegende paragraaftekst, Het stylen van de productfoto’s, inclusief de animatie op de achtergrond, Het aanpassen van het contrast van de socialmedia iconen.        
+   | Kyra:  grid (afbeeldingen en tekst responsive krijgen) en hoe ik een kleine animatie krijg van iets wat geen afbeelding is
+    | Randi: vragen over de header  
+
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - geleerd horizontaal te scrollen
+  - grid columns
 
 </details>
 
@@ -128,20 +126,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Patoune | - hoe ik mijn afbeeldingen horizontaal kon laten scrollen
+      Aya | - Of het toegestaan is om 2 images binnen 1 article te hebben, waarvan 1 als achtergrond img.
+            - 2 images op de echte website met de juiste kleur downloaden.
+            - Hoe ik de contrast van socialmedia iconen met css kan laten veranderen.
+    Joost | - Hoe ik mijn nav kan vormgeven als een responsive raster.
+            - Kijken naar mijn grid en hoe ik daarin dingen kan gaan plaatsen
+     Kyra | - Afbeeldingen positioneren op mijn home page en hoe ik dat in een grid kan doen.
+            - Hoe ik de animatie het best kan maken.
+
+ 
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - 
 
 </details>
 
@@ -174,21 +174,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Agenda voor meeting
   samen met je groepje opstellen
+    Patoune | - Hoe zet ik een video in mijn html, met controls en hoe style ik de summary's in mijn footer
+      Aya | X
+    Randi | X
+     Kyra | - Search balk in hamburger menu. cursor laten meebewegen.
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Hoe ik video's erin zet
+  - met controls, autoplay
+  - footer stylen
 
 </details>
 
@@ -202,19 +200,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="<img src="readme-images/Louis Vuitton.png" alt=">" width="375px" alt="uitomst opdracht 1">
+<img src="readme-images/LouisVuitton2.png" alt="">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Geleerd met grid alles responsive maken, hamburger menu maken met Javascript en Light en dark mode.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  De pagina tot in detail namaken.
 </details>
 
 
@@ -230,8 +225,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. /* https://www.handleidinghtml.nl/css/eigenschappen/text-decoration/voorbeelden.html */
+  2. /* https://codyhouse.co/nuggets/css-gradient-borders */
+  3. ChatGPT over overflow-y en overflow-x
 
 </details>
